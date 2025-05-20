@@ -1,0 +1,12 @@
+builder_type: GeneratorBuilder
+changed_columns: ["paperid", "title_abstract", "full_paper"]
+python_function: retrieve_dataset_generate
+code_module: document_processing
+is_custom: True
+arguments:
+  path: "princeton-nlp/LitSearch"
+  dataset_name: "corpus_clean"
+  columns: ["corpusid", "title", "abstract", "full_paper"]
+  joined_columns: 
+    title_abstract: ["title", "abstract"]
+

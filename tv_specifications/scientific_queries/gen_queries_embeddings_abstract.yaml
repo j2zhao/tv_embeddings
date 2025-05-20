@@ -1,0 +1,10 @@
+builder_type: CodeBuilder
+changed_columns: [query_embeddings_abstract]
+python_function: generate_embeddings
+code_module: embeddings
+is_custom: True
+is_udf: False
+arguments:
+  file_path: <<self.query>>
+  raw_instruction: "<|user|>\n Given a research query, retrieve the title and abstract of the relevant research paper \n<|embed|>\n"
+n_threads: 1

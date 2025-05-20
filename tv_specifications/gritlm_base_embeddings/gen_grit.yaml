@@ -1,0 +1,7 @@
+builder_type: GeneratorBuilder
+changed_columns: ["paperid"]
+python_function: create_data_table_from_table
+code_module: table_generation
+is_custom: false
+arguments:
+  df: <<scientific_papers.paperid>>

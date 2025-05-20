@@ -1,0 +1,9 @@
+builder_type: GeneratorBuilder
+changed_columns: ["query", "query_set", "specificity", "quality", "paperids"]
+python_function: retrieve_dataset_generate
+code_module: document_processing
+is_custom: True
+arguments:
+  path: "princeton-nlp/LitSearch"
+  dataset_name: "query"
+  columns: ["query", "query_set", "specificity", "quality", "corpusids"]

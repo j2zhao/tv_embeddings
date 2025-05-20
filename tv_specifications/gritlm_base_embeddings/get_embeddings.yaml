@@ -1,0 +1,10 @@
+builder_type: CodeBuilder
+changed_columns: ["gritlm_abstract_embeddings"]
+python_function: generate_embeddings
+code_module: embeddings
+is_custom: true
+is_udf: False
+arguments:
+  abstract: <<scientific_papers.title_abstract[paperid::self.paperid[index]]>>
+  raw_instruction: "<|embed|>\n"
+n_threads: 1

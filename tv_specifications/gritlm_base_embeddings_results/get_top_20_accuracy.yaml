@@ -1,0 +1,11 @@
+builder_type: CodeBuilder
+changed_columns: [top_20_selection]
+python_function: default_answer_query
+code_module: answers_processing
+is_custom: True
+is_udf: True
+arguments:
+  real_answer: <<scientific_queries.paperids[index]>>
+  top_ids: <<self.top_values[index]>>
+  top_values: 5
+n_threads: 1

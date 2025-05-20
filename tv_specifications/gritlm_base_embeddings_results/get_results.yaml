@@ -1,0 +1,14 @@
+builder_type: CodeBuilder
+changed_columns: [top_values]
+python_function: default_answer_query
+code_module: answers_processing
+is_custom: True
+is_udf: True
+arguments:
+  question_embedding: <<scientific_queries.query_embeddings_abstract[index]>>
+  embeddings: <<gritlm_base_embeddings.{paperid, gritlm_abstract_embeddings}>>
+  top_values: 20
+  embeddings_name: gritlm_abstract_embeddings
+  id_name: paperid
+  
+n_threads: 1
