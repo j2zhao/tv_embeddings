@@ -15,7 +15,7 @@ def retrieve_dataset_generate(path,
         corpus_data[new_col] = corpus_data[joined_columns[new_col][0]]
         for col in joined_columns[new_col][1:]:
             corpus_data[new_col] += '\n' + corpus_data[col]
-        corpus_data.drop(columns=[joined_columns[new_col]], inplace=True)
+        corpus_data.drop(columns=joined_columns[new_col], inplace=True)
     return corpus_data
 
 def retrieve_dataset_match(id_df: pd.DataFrame, 

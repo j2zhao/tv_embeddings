@@ -7,7 +7,9 @@ raw_instruction = "Given a research query, retrieve the title and abstract of th
 raw_instruction = "Given a research query, retrieve the passage from the relevant research paper"
 
 def generate_embeddings(texts:pd.DataFrame, raw_instruction:str):
+    print(len(texts))
     model = GritLM(model_path, torch_dtype="auto", device_map="auto", mode="embedding") 
+    print(model.device)
     ndarr = model.encode(texts, batch_size=256, 
                  instruction=raw_instruction, 
                  show_progress_bar=True).astype(np.float16)

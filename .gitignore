@@ -1,3 +1,7 @@
+# tablevault file
+litsearch-tables/*
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

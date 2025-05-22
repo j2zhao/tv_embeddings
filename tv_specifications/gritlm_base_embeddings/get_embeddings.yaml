@@ -5,6 +5,6 @@ code_module: embeddings
 is_custom: true
 is_udf: False
 arguments:
-  abstract: <<scientific_papers.title_abstract[paperid::self.paperid[index]]>>
+  abstract: <<scientific_papers.title_abstract>>
   raw_instruction: "<|embed|>\n"
 n_threads: 1
